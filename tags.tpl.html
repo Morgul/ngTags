@@ -1,0 +1,7 @@
+<div class="form-control ng-tags">
+    <span class="tag label" ng-class="getTagsClass(tag)" ng-repeat="tag in tags track by $index">
+        {{ tag }}
+        <button type="button" class="close" aria-hidden="true" ng-click="removeTag(tag)">&times;</button>
+    </span>
+    <tags-input ng-model="newTag" class="tags-input" placeholder="Type to add tags" events="{{ tagEvents() }}"></tags-input>
+</div>

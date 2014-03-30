@@ -1,0 +1,47 @@
+.ng-tags {
+    padding-top: 3px;
+    min-height: 38px;
+    height: auto;
+    line-height: 20px;
+
+    .tag {
+        margin-top: 5px;
+        margin-right: 5px;
+        display: inline-block;
+        padding-top: .4em;
+        padding-bottom: .1em;
+
+        .close {
+            font-size: 18px;
+            float: none;
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: -3px;
+        }
+    }
+
+    .tag:last-of-type {
+        margin-right: 0;
+    }
+
+    .tags-input {
+        margin-top: 5px;
+        display: inline-block;
+        min-width: 50px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .placeholder {
+        color: #aaa;
+        pointer-events: none;
+    }
+
+    [contenteditable="true"]:active,
+    [contenteditable="true"]:focus {
+        border: none;
+        outline: none;
+    }
+}
