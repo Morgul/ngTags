@@ -1,0 +1,30 @@
+{
+  "name": "ngTags",
+  "version": "0.1.0",
+  "description": "An angularjs based tag input, using bootstrap 3.",
+  "main": "ng-tags.directive.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-less": "~0.11.0",
+    "grunt-html2js": "~0.2.4",
+    "grunt-contrib-uglify": "~0.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Morgul/ngTags.git"
+  },
+  "keywords": [
+    "tags",
+    "bootstrap"
+  ],
+  "author": "Christopher S. Case <chris.case@g33xnexus.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Morgul/ngTags/issues"
+  }
+}

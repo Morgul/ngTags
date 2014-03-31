@@ -4,7 +4,7 @@
 // @module ng-tags.js
 // ---------------------------------------------------------------------------------------------------------------------
 
-var module = angular.module('ui.ngTags', []);
+var module = angular.module('ui.ngTags', ['ui.ngTags.templates']);
 
 // ---------------------------------------------------------------------------------------------------------------------
 
@@ -153,7 +153,7 @@ module.directive('ngTags', function()
             replaceSpaces: '&',
             uniqueTags: '&uniqueTags'
         },
-        templateUrl: '/components/ngTags/tags.html',
+        templateUrl: '/tags.html',
         link: function(scope, element) {
             var inputElem = element.children().children();
 
@@ -163,7 +163,7 @@ module.directive('ngTags', function()
                 inputElem[0].focus();
             });
         },
-        controller: 'NGTagsController'
+        controller: ['$scope', NGTagsController]
     }
 });
 
