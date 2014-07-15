@@ -40,3 +40,9 @@ space, it will create a new tag.
 Specifies the class to apply to the tag. Tags always have the bootstrap 3 'label' class applied, however, you can apply
 additional classes to override the styling. If `tag-class` is a function, the function will be passed the text of the
 tag, and expects a string returned.
+
+### `replace-spaces`
+
+* Possible Values: `true` or `false` (Default: `false`)
+
+If `true` all spaces will be replaces with `-`. This is useful if you are using your tags as slugs, or if you find tags with spaces to be ugly. (_Note: This doesn't make any sense if `space` is specified in `tag-events`._)
